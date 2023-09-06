@@ -20,7 +20,7 @@ export default function Navbar() {
   }, []);
   return (
     <nav className={isScrolled ? "scrolled" : ""}>
-      <a href="/">Home</a>
+      <a href="/">Byte Bros</a>
       <a href="/about">About</a>
       <a href="/services">Services</a>
       <a href="/contact">Contact Us</a>

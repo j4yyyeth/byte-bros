@@ -4,7 +4,7 @@ interface Props {
 }
 import "../main.css";
 import Navbar from "../components/Navbar";
-import Button2 from "../components/buttons/Button2";
+import Footer from "../components/Footer";
 // const { title } = Astro.props;
 ---
 
@@ -23,11 +23,6 @@ import Button2 from "../components/buttons/Button2";
     <main>
       <slot />
     </main>
-    <footer>
-      <h3>Stay in Touch</h3>
-      <lable>Your Email</lable>
-      <input />
-      <Button2 contents="Subscribe" />
-    </footer>
+    <Footer />
   </body>
 </html>

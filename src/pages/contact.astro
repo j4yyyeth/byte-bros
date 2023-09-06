@@ -1,23 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Button2 from "../components/buttons/Button2";
 ---
 
 <Layout title="Byte Bros">
-  <main>
-    <h1>Contact Byte Bros</h1>
-    <form>
-      <label>Name</label>
-      <input />
-      <label>Email</label>
-      <input />
-      <label>Business Name</label>
-      <input />
-      <label>Location</label>
-      <!-- Use google location API -->
-      <input />
-      <label>Message</label>
-      <input />
-      <button class="btn"> Send →</button>
+  <main class="container">
+    <form class="contact-form">
+      <div class="input-container">
+        <input type="text" id="input" required="" />
+        <label for="input" class="label">Name</label>
+        <div class="underline"></div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="input" required="" />
+        <label for="input" class="label">Email</label>
+        <div class="underline"></div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="input" required="" />
+        <label for="input" class="label">Business Name</label>
+        <div class="underline"></div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="input" required="" />
+        <label for="input" class="label">Location</label>
+        <div class="underline"></div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="input" required="" />
+        <label for="input" class="label">Message</label>
+        <div class="underline"></div>
+      </div>
+      <Button2 contents="Send" />
     </form>
     <h3>--- OR ---</h3>
     <a href="https://calendly.com/jacobhandwerger/30-minute-meeting-clone"
