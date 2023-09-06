@@ -1,4 +1,5 @@
 import Button2 from "./buttons/Button2";
+import Socials from "./Socials";
 
 export default function Footer() {
   return (
@@ -13,7 +14,8 @@ export default function Footer() {
         ></input>
         <Button2 contents="Subscribe" />
       </form>
-      <div className="socials">{/*  */}</div>
+      <Socials />
+      <h4>Copyright © 2023 Byte Bros</h4>
     </footer>
   );
 }
