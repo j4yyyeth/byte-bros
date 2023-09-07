@@ -23,7 +23,7 @@ body {
 
 nav {
     height: 2.4rem;
-    padding: 1rem;
+    padding: 1.3rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -61,9 +61,7 @@ footer form {
 
 
 #home-container {
-    background-color: #007BFF;
-    color: whitesmoke;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +73,27 @@ footer form {
     width: 400px;
 }
 
-#about-container {
+.home-span {
+    color: whitesmoke;
+    font-size: 2rem;
+    background-color: #007BFF;
+    padding: .5rem;
+    border-radius: 100rem;
+}
+
+.trusted-companies {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.trusted-companies h3 {
+    color: #007BFF;
+}
+
+/* #about-container {
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -89,6 +107,46 @@ footer form {
     justify-content: center;
     align-content: center;
     gap: 5rem;
+} */
+
+#about-container {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    grid-template-areas:
+        "left-section right-section"
+        "testimonials testimonials";
+    /* Testimonials section spans both columns */
+    background-color: #f7f7f7;
+    /* Background color */
+}
+
+.about-text {
+    padding: 2rem;
+    text-align: center;
+    grid-area: center-section;
+    /* Place this section in the left column */
+}
+
+.left-section {
+    text-align: left;
+    /* Align text in this section to the left */
+}
+
+.right-section {
+    text-align: right;
+    /* Align text in this section to the right */
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 5rem;
+    grid-area: testimonials;
+    /* Span both columns */
 }
 
 #services-container {
@@ -134,7 +192,6 @@ footer {
     padding: 1.5rem;
     background-color: #fff;
     color: rgb(176, 176, 176);
-    border-top: 1px solid black;
 }
 
 .footer-top {
@@ -152,13 +209,18 @@ footer {
 }
 
 .footer-line {
-    border: 1px solid black;
-    width: 95vw
+    border: .5px solid black;
+    width: 100vw
 }
 
 .logo-img-footer {
     height: 5rem;
     width: 5rem;
+}
+
+.logo-img-navbar {
+    height: 4rem;
+    width: 4rem;
 }
 
 .email-list {

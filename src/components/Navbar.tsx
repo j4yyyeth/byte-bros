@@ -20,7 +20,7 @@ export default function Navbar() {
   }, []);
   return (
     <nav className={isScrolled ? "scrolled" : ""}>
-      <a href="/">Byte Bros</a>
+      <a href="/"><img className="logo-img-navbar" src="./logo.png"></img></a>
       <a href="/about">About</a>
       <a href="/services">Services</a>
       <a href="/contact">Contact Us</a>
