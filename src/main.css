@@ -51,25 +51,6 @@ a {
     text-decoration: none;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    background-color: #fff;
-    color: rgb(176, 176, 176);
-    padding: 2rem;
-    text-align: center;
-    border-top: 1px solid black;
-}
-
-footer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: black;
-}
-
 footer form {
     display: flex;
     flex-direction: row;
@@ -78,7 +59,10 @@ footer form {
     gap: 10px;
 }
 
+
 #home-container {
+    background-color: #007BFF;
+    color: whitesmoke;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -142,6 +126,83 @@ footer form {
     border: 1.5px solid black;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    color: rgb(176, 176, 176);
+    border-top: 1px solid black;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    gap: 25rem;
+    margin-bottom: 3rem;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    margin-bottom: 3rem;
+}
+
+.footer-line {
+    border: 1px solid black;
+    width: 95vw
+}
+
+.logo-img-footer {
+    height: 5rem;
+    width: 5rem;
+}
+
+.email-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.email-list p {
+    width: 19rem;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.helpful-info {
+    display: flex;
+    align-content: center;
+}
+
+.helpful-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.helpful-images-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.helpful-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1.6rem;
+}
+
 #socials {
     padding: 1rem;
     display: flex;
@@ -150,7 +211,6 @@ footer form {
     align-items: center;
     gap: 1rem;
 }
-
 
 /* BUTTONS */
 
