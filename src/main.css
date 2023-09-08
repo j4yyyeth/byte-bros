@@ -450,24 +450,34 @@ footer {
     --cardShadow: rgba(32, 33, 37, .1);
     --cardShadowHover: rgba(32, 33, 37, .06);
     --cardShadowActive: rgba(32, 33, 37, .55);
-    --cardBorder: #007BFF;
-    --cardBorderActive: #007BFF;
     --textColor: #000000;
     --ratingColor: #ffbb2a;
 }
 
 .card {
     width: 250px;
-    height: 350px;
+    height: 260px;
     aspect-ratio: 2/3;
     background: var(--background);
     color: var(--textColor);
     border: 1px solid var(--cardBorder);
     padding: 25px;
     box-shadow: 8px 8px 0 var(--cardShadow);
-    transition: box-shadow .5s, transform .5s;
+    /* transition: box-shadow .5s, transform .5s; */
     border-radius: 8px;
     display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 2s, box-shadow 0.5s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icon1 {
+    text-align: center;
 }
 
 .card:hover {
