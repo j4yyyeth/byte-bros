@@ -376,7 +376,8 @@ footer {
     width: 200px;
 }
 
-.input-container input[type="text"] {
+.input-container input[type="text"],
+.input-container input[type="email"] {
     font-size: 20px;
     width: 100%;
     border: none;
@@ -396,7 +397,9 @@ footer {
 }
 
 .input-container input[type="text"]:focus~.label,
-.input-container input[type="text"]:valid~.label {
+.input-container input[type="text"]:valid~.label,
+.input-container input[type="email"]:focus~.label,
+.input-container input[type="email"]:valid~.label {
     top: -20px;
     font-size: 16px;
     color: #333;
@@ -414,7 +417,9 @@ footer {
 }
 
 .input-container input[type="text"]:focus~.underline,
-.input-container input[type="text"]:valid~.underline {
+.input-container input[type="text"]:valid~.underline,
+.input-container input[type="email"]:focus~.underline,
+.input-container input[type="email"]:valid~.underline {
     transform: scaleX(1);
 }
 

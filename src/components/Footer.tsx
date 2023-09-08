@@ -1,4 +1,3 @@
-import Button2 from "./buttons/Button2";
 import Socials from "./Socials";
 
 export default function Footer() {
@@ -16,14 +15,31 @@ export default function Footer() {
             Get the latest updates and promotions delivered directly to your
             inbox
           </p>
-          <form>
+          <form method="post" action="/api/emails">
             <input
               type="email"
-              placeholder="Email"
+              id="email"
               name="email"
+              placeholder="Email"
               className="footer-input"
             ></input>
-            <Button2 contents="Subscribe" />
+            <button type="submit" className="cta">
+              <span className="hover-underline-animation">Subscribe</span>
+              <svg
+                viewBox="0 0 46 16"
+                height="10"
+                width="30"
+                xmlns="http://www.w3.org/2000/svg"
+                id="arrow-horizontal"
+              >
+                <path
+                  transform="translate(30)"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10"
+                  id="Path_10"
+                ></path>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -87,7 +103,9 @@ export default function Footer() {
       </div>
       <div className="footer-line"></div>
       <h4>Copyright © 2023 Byte Bros</h4>
-      <a className="storyset-a" href="https://storyset.com/data">Data illustrations by Storyset</a>
+      <a className="storyset-a" href="https://storyset.com/data">
+        Data illustrations by Storyset
+      </a>
     </footer>
   );
 }

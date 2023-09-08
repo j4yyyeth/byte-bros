@@ -4,34 +4,34 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Byte Bros">
   <main id="contact-container">
-    <form class="contact-form">
+    <form method="post" action="/api/clients" class="contact-form">
       <div>
         <div class="input-container">
-          <input type="text" id="input" required />
+          <input type="text" id="name" name="name" required />
           <label for="input" class="label">Name</label>
           <div class="underline"></div>
         </div>
         <div class="input-container">
-          <input type="text" id="input" required />
+          <input type="email" id="email" name="email" required />
           <label for="input" class="label">Email</label>
           <div class="underline"></div>
         </div>
         <div class="input-container">
-          <input type="text" id="input" required />
+          <input type="text" id="businessName" name="businessName" required />
           <label for="input" class="label">Business Name</label>
           <div class="underline"></div>
         </div>
         <div class="input-container">
-          <input type="text" id="input" required />
+          <input type="text" id="location" name="location" required />
           <label for="input" class="label">Location</label>
           <div class="underline"></div>
         </div>
         <div class="input-container">
-          <input type="text" id="input" required />
+          <input type="text" id="message" name="message" required />
           <label for="input" class="label">Message</label>
           <div class="underline"></div>
         </div>
-        <button class="cta">
+        <button type="submit" class="cta">
           <span class="hover-underline-animation">Send</span>
           <svg
             viewBox="0 0 46 16"
@@ -67,4 +67,5 @@ import Layout from "../layouts/Layout.astro";
 <script
   type="text/javascript"
   src="https://assets.calendly.com/assets/external/widget.js"
-  async></script>
+  async
+></script>
