@@ -64,9 +64,7 @@ nav a {
 }
 
 .nav-link:hover {
-    background: #007BFF;
-    color: white;
-    border-radius: .8rem;
+    color: #007BFF;
 }
 
 .hamburger {
@@ -131,6 +129,66 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 18rem;
+}
+
+.home-text-img {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.home-icon {
+    width: 50vw;
+    height: 80vh;
+}
+
+@media screen and (max-width: 700px) {
+    .home-text-img {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .home-text-img {
+        width: 95vw;
+    }
+
+    .home-icon {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    #home-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 27rem;
+    }
+
+    #home-container h1 {
+        font-size: 3rem;
+    }
+
+    #home-container span {
+        font-size: 3rem;
+    }
+
+    .company-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 .home-top {
@@ -143,19 +201,29 @@ a {
 }
 
 .home-span {
-    color: whitesmoke;
+    color: #007BFF;
     font-size: 2rem;
-    background-color: #007BFF;
+    font-weight: 900;
     padding: .5rem;
-    border-radius: 100rem;
 }
 
 .trusted-companies {
+    padding: 3rem;
+    background: rgb(193, 193, 193);
+    background: radial-gradient(circle, rgba(193, 193, 193, 1) 6%, rgb(220, 220, 220) 26%, rgba(193, 193, 193, 1) 52%, rgba(193, 193, 193, 1) 74%, rgba(255, 255, 255, 1) 100%);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
 }
 
 .company-img {
@@ -164,7 +232,9 @@ a {
 }
 
 .trusted-companies h3 {
-    color: #007BFF;
+    color: #000000;
+    font-size: 2.3rem;
+    font-weight: 900;
 }
 
 #about-container {
@@ -483,50 +553,6 @@ footer form {
 
 /* BUTTONS */
 
-.btn1 {
-    padding: 1.1em 2em;
-    background: none;
-    border: 2px solid #fff;
-    font-size: 15px;
-    color: #ffffff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s;
-    border-radius: 12px;
-    background-color: #000;
-    font-weight: bolder;
-    box-shadow: 0 2px 0 2px #ff6700;
-}
-
-.btn1:before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 120%;
-    background-color: #007BFF;
-    top: 50%;
-    transform: skewX(30deg) translate(-150%, -50%);
-    transition: all 0.5s;
-}
-
-.btn1:hover {
-    background-color: #ff6700;
-    color: #fff;
-    box-shadow: 0 2px 0 2px #000;
-}
-
-.btn1:hover::before {
-    transform: skewX(30deg) translate(150%, -50%);
-    transition-delay: 0.1s;
-}
-
-.btn1:active {
-    transform: scale(0.9);
-}
-
-/*  */
-
 .cta {
     border: none;
     background: none;
@@ -795,7 +821,8 @@ footer form {
     width: 100%;
     height: 80px;
     max-width: 80px;
-    background: linear-gradient(90deg, #ff8800 0%, #ff6700 40%, #fff 60%);
+    background: linear-gradient(90deg, #ff8800 0%, #ff6700 40%, #fffbf8 60%); 
+    /* #fff */
     border-radius: 100%;
     display: flex;
     justify-content: center;
