@@ -9,7 +9,6 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   const businessName = formData.get("businessName")?.toString(); 
   const location = formData.get("location")?.toString();
   const message = formData.get("message")?.toString();
-  // FIX ERROR HANDLING
   if (!name || !email || !businessName || !location || !message) {
     return new Response("Missing required fields", {
       status: 400,
@@ -25,7 +24,6 @@ export const POST: APIRoute = async ({ request, redirect }) => {
       location,
       message,
     });
-    // FIX ERROR HANDLING
   } catch (error) {
     return new Response("Something went wrong", {
       status: 500,

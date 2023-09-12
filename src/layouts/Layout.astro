@@ -11,7 +11,10 @@ import Footer from "../components/Footer";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="Byte Bros Website" content="Byte Bros is a company offering a variety of services ..." />
+    <meta
+      name="Byte Bros Website"
+      content="Byte Bros is a company offering a variety of services ..."
+    />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -23,5 +26,26 @@ import Footer from "../components/Footer";
       <slot />
     </main>
     <Footer />
+    <script
+      async
+      src=`https://maps.googleapis.com/maps/api/js?key=${import.meta.env.GOOGLE_LOCATION_API_KEY}&libraries=places&callback=initMap`
+    ></script>
+    <script>
+      function initializeAutocomplete() {
+        const input = document.getElementById("location");
+        const options = {
+          types: ["geocode"],
+        };
+        const autocomplete = new google.maps.places.Autocomplete(
+          input,
+          options
+        );
+      }
+      document.addEventListener("DOMContentLoaded", initializeAutocomplete);
+    </script>
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async></script>
   </body>
 </html>

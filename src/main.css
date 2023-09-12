@@ -45,6 +45,10 @@ nav.scrolled {
     margin: 0 auto;
 }
 
+.logo-container {
+    margin-left: 2rem;
+}
+
 .nav-links {
     display: flex;
     gap: 3rem;
@@ -77,14 +81,17 @@ nav a {
 
     .hamburger {
         display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     .nav-links.show {
         display: flex;
         flex-direction: column;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, .9);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         position: absolute;
         top: 100%;
         left: 0;
@@ -149,6 +156,11 @@ a {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+.company-img {
+    height: 100px;
+    width: 290px;
 }
 
 .trusted-companies h3 {
@@ -573,7 +585,7 @@ footer form {
 .input-container {
     position: relative;
     margin: 50px auto;
-    width: 200px;
+    width: 250px;
 }
 
 .input-container input[type="text"],
@@ -770,6 +782,7 @@ footer form {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 2s, box-shadow 0.5s ease-out;
+    padding-bottom: 1rem;
 }
 
 .fade-in {

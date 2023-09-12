@@ -1,5 +1,4 @@
 import Socials from "./Socials";
-
 export default function Footer() {
   return (
     <footer>
@@ -103,9 +102,7 @@ export default function Footer() {
       </div>
       <div className="footer-line"></div>
       <h4>Copyright © 2023 Byte Bros</h4>
-      <a className="storyset-a" href="https://storyset.com/data">
-        Data illustrations by Storyset
-      </a>
+      <a className="storyset-a" href="https://storyset.com/technology">Technology illustration by Storyset</a>
     </footer>
   );
 }
