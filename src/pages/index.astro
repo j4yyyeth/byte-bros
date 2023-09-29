@@ -6,9 +6,16 @@ import Layout from "../layouts/Layout.astro";
   <main id="home-container">
     <div class="home-top">
       <div class="home-text-img">
-        <h1 class="home-text-h1">
-          Company Catchprase <span class="home-span">Action Word</span>
-        </h1>
+        <div class="home-text-top">
+          <h1>Your Tech, Our Expertise</h1>
+          <h1>Focus on<span class="home-span">Selling</span></h1>
+          <a href="/contact" class="button-blue-cta">
+            Contact Now
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon-blue-btn">
+              <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
           <img class="home-icon" src="./icon.svg" />
       </div>
       <div class="trusted-companies">
@@ -25,32 +32,6 @@ import Layout from "../layouts/Layout.astro";
             alt="buyers for points"
           />
         </div>
-      </div>
-    </div>
-    <div class="testimonials">
-      <div class="card" style="--rating:90">
-        <div class="icon1">🫡</div>
-        <div class="title">Mr. 1</div>
-        <p class="description">
-          "lorem ipsum dolor sit amet consectetur adipisicing elit."
-        </p>
-        <div class="rating"></div>
-      </div>
-      <div class="card" style="--rating:80">
-        <div class="icon1">😤</div>
-        <div class="title">Mr. 2</div>
-        <p class="description">
-          "lorem ipsum dolor sit amet consectetur adipisicing elit."
-        </p>
-        <div class="rating"></div>
-      </div>
-      <div class="card" style="--rating:100">
-        <div class="icon1">🥶</div>
-        <div class="title">Mr. 3</div>
-        <p class="description">
-          "lorem ipsum dolor sit amet consectetur adipisicing elit."
-        </p>
-        <div class="rating"></div>
       </div>
     </div>
   </main>

@@ -7,7 +7,7 @@ export default function Footer() {
           <a href="/">
             <img className="logo-img-footer" src="./logo.png" alt="logo"></img>
           </a>
-          <p>Company catchprase</p>
+          <p>Focus On Selling</p>
         </div>
         <div className="email-list">
           <p>
